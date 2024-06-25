@@ -126,3 +126,11 @@ php artisan serve
 ```bash
 php artisan db:seed --class=DatabaseSeeder
 ```
+
+```bash
+php artisan db:seed --class=OriginalUsersSeeder
+```
+
+```bash
+php artisan db:seed --class=RamdomUsersSeeder
+```
