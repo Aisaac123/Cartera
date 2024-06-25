@@ -1,8 +1,10 @@
-<p align="center"><img src="" width="400" alt="LovingCare Logo"></p>
+<p align="center">
+  <img src="https://github.com/Aisaac123/cartera-app/assets/129123213/c8d49739-b376-41cc-9a8e-96becc53f373" width="400" alt="Cartera Logo">
+</p>
 
 ## Objetivo (temporal)
 
-#### La aplicacion tiene como objetivo gestionar los ingresos y egresos mensuales del usuario, se prioriza la eficiencia, la interactividad y facilidad para el usuario.
+### Gestionar los ingresos y egresos mensuales del usuario, se prioriza la eficiencia, la interactividad y facilidad para este mismo.
 
 
 ## Funcionamiento (temporal)
@@ -126,3 +128,8 @@ php artisan serve
 ```bash
 php artisan db:seed --class=DatabaseSeeder
 ```
+<br/>
+
+<h3 align="center">
+   Made with 🤍 by NovaSprint
+</h3>
