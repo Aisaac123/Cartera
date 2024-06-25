@@ -125,7 +125,6 @@ php artisan serve
 php artisan db:seed --class=DatabaseSeeder
 ```
 
-<<<<<<< HEAD
 ```bash
 php artisan db:seed --class=OriginalUsersSeeder
 ```
