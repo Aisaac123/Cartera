@@ -68,6 +68,8 @@
     - La aplicación debe ser escalable para manejar un crecimiento futuro de usuarios.
     - Se debe considerar la localización (formatos de fecha y hora) para una audiencia global.
 
+<hr/>
+
 ## 🚀 Tech Stack
 
 - [Laravel 11.x](https://laravel.com/docs/11.x) with [Livewire 3.x and Volt](https://livewire.laravel.com/)
