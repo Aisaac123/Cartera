@@ -1,8 +1,10 @@
-<p align="center"><img src="" width="400" alt="LovingCare Logo"></p>
+<p align="center">
+  <img src="https://github.com/Aisaac123/cartera-app/assets/129123213/c8d49739-b376-41cc-9a8e-96becc53f373" width="400" alt="Cartera Logo">
+</p>
 
 ## Objetivo (temporal)
 
-#### La aplicacion tiene como objetivo gestionar los ingresos y egresos mensuales del usuario, se prioriza la eficiencia, la interactividad y facilidad para el usuario.
+### Gestionar los ingresos y egresos mensuales del usuario, se prioriza la eficiencia, la interactividad y facilidad para este mismo.
 
 
 ## Funcionamiento (temporal)
@@ -98,13 +100,9 @@ php artisan migrate
 ```
 6. Get your local app key
 ```bash
-php artisan key:generate --show
+php artisan key:generate
 ```
-7. Paste on .env your app key generated (without [])
-```bash
-APP_KEY=[app-key-generated]
-```
-8. Create symbolic link to access files
+7. Create symbolic link to access files
 ```bash
 php artisan storage:link
 ```
@@ -127,10 +125,6 @@ php artisan serve
 php artisan db:seed --class=DatabaseSeeder
 ```
 
-```bash
-php artisan db:seed --class=OriginalUsersSeeder
-```
-
-```bash
-php artisan db:seed --class=RamdomUsersSeeder
-```
+<h3 align="center">
+   Made with 🤍 by NovaSprint
+</h3>
