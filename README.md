@@ -100,13 +100,9 @@ php artisan migrate
 ```
 6. Get your local app key
 ```bash
-php artisan key:generate --show
+php artisan key:generate
 ```
-7. Paste on .env your app key generated (without [])
-```bash
-APP_KEY=[app-key-generated]
-```
-8. Create symbolic link to access files
+7. Create symbolic link to access files
 ```bash
 php artisan storage:link
 ```
