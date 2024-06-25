@@ -125,6 +125,15 @@ php artisan serve
 php artisan db:seed --class=DatabaseSeeder
 ```
 
+<<<<<<< HEAD
+```bash
+php artisan db:seed --class=OriginalUsersSeeder
+```
+
+```bash
+php artisan db:seed --class=RamdomUsersSeeder
+```
+
 <h3 align="center">
    Made with 🤍 by NovaSprint
 </h3>
