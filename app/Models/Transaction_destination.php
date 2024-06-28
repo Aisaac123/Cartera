@@ -11,13 +11,19 @@ class Transaction_destination extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'date',
+        'card_id',
+        'destination_id',
+    ];
+
     public function destination(): BelongsTo
     {
         return $this->belongsTo(Destination::class);
     }
 
-    public function transaction(): HasOne
+    public function transaction(): BelongsTo
     {
-        return $this->hasOne(Transaction::class);
+        return $this->belongsTo(Transaction::class);
     }
 }

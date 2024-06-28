@@ -11,6 +11,11 @@ class Destination extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'account_number',
+        'bank_id',
+    ];
+
     public function transaction_destinations(): HasMany
     {
         return $this->hasMany(Transaction_destination::class);

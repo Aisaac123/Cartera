@@ -10,6 +10,10 @@ class Card_type extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+      'name',
+    ];
+
     public function cards(): HasMany
     {
         return $this->hasMany(Card::class);

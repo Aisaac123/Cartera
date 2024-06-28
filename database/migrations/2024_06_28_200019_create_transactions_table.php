@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId('transaction_type_id')->constrained()->onDelete('cascade');
             $table->foreignId('card_id')->constrained()->onDelete('cascade');
             $table->foreignId('destination_id')->constrained()->onDelete('cascade');
-            $table->foreignId('transaction_status_id')->constrained()->onDelete('cascade');
+            $table->foreignId('transaction_state_id')->constrained()->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->boolean('expenditure');
             $table->double('amount');
             $table->foreignId('card_type_id')->constrained()->onDelete('cascade');
-            $table->foreignId('supplier_id')->constrained()->onDelete('cascade');
+            $table->foreignId('card_supplier_id')->constrained()->onDelete('cascade');
             $table->foreignId('bank_id')->constrained()->onDelete('cascade');
             $table->foreignId('wallet_id')->constrained()->onDelete('cascade');
             $table->softDeletes();

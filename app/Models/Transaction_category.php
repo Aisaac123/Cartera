@@ -10,6 +10,10 @@ class Transaction_category extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+    ];
+
     public function transactions(): HasMany
     {
         return $this->hasMany(Transaction::class);

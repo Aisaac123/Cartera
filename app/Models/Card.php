@@ -11,6 +11,28 @@ class Card extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'number',
+        'purpose',
+        'income',
+        'expenditure',
+        'amount',
+        'card_type_id',
+        'card_supplier_id',
+        'bank_id',
+        'wallet_id',
+    ];
+
+    public function schedules(): HasMany
+    {
+        return $this->hasMany(Schedule::class);
+    }
+
+    public function transactions(): HasMany
+    {
+        return $this->hasMany(Transaction::class);
+    }
+
     public function bank(): BelongsTo
     {
         return $this->belongsTo(Bank::class);
@@ -29,15 +51,5 @@ class Card extends Model
     public function wallet(): BelongsTo
     {
         return $this->belongsTo(Wallet::class);
-    }
-
-    public function schedules(): HasMany
-    {
-        return $this->hasMany(Schedule::class);
-    }
-
-    public function transactions(): HasMany
-    {
-        return $this->hasMany(Transaction::class);
     }
 }

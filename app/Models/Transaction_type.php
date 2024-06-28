@@ -10,6 +10,10 @@ class Transaction_type extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+    ];
+
     public function Schedules(): HasMany
     {
         return $this->hasMany(Schedule::class);

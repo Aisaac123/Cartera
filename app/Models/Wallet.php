@@ -11,6 +11,11 @@ class Wallet extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'description',
+        'user_id',
+    ];
+
     /**
      * Get the wallet that belong the user.
      */

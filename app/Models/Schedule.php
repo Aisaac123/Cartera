@@ -10,6 +10,14 @@ class Schedule extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'shipping_date',
+        'amount',
+        'card_id',
+        'destination_id',
+        'transaction_type_id',
+    ];
+
     public function transaction_types(): BelongsTo
     {
         return $this->belongsTo(Transaction_type::class);
