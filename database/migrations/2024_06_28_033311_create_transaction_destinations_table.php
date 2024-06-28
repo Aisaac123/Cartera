@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('card_supplier', function (Blueprint $table) {
+        Schema::create('transaction_destinations', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->softDeletes();
+            $table->dateTime('date');
+            $table->foreignId('card_id')->constrained()->onDelete('cascade');
+            $table->foreignId('destination_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('card_supplier');
+        Schema::dropIfExists('transaction_destinations');
     }
 };

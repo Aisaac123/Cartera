@@ -11,13 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('schedule', function (Blueprint $table) {
+        Schema::create('wallets', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('shipping_date');
-            $table->double('amount');
-            $table->foreignId('card_id')->nullable()->constrained()->onDelete('cascade');
-            $table->foreignId('destination_id')->constrained()->onDelete('cascade');
-            $table->foreignId('transaction_type_id')->constrained()->onDelete('cascade');
+            $table->text('description')->nullable();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('schedule');
+        Schema::dropIfExists('wallets');
     }
 };
