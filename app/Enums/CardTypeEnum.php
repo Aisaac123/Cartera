@@ -2,7 +2,7 @@
 
 namespace App\Enums;
 
-enum CardTypes: string
+enum CardTypeEnum: string
 {
     case CREDIT = 'credit'; //Tarjeta de credito
     case DEBIT = 'debit'; //Tarjeta de debito

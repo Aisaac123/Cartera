@@ -2,7 +2,7 @@
 
 namespace App\Enums;
 
-enum TransactionCategories: string
+enum TransactionCategoryEnum: string
 {
     case SERVICES = 'services'; //Servicios
     case CREDIT_FEE = 'credit_fee'; //Cuota de crédito

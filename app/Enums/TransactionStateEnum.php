@@ -2,7 +2,7 @@
 
 namespace App\Enums;
 
-enum TransactionStates: string
+enum TransactionStateEnum: string
 {
     case ADVANCED = 'advanced'; //Adelantada
     case OVERDUE = 'overdue'; //Atrasada
