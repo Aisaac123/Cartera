@@ -1,4 +1,4 @@
-<?php
+<<?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transaction_status', function (Blueprint $table) {
+        Schema::create('card_types', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->softDeletes();
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transaction_status');
+        Schema::dropIfExists('card_types');
     }
 };

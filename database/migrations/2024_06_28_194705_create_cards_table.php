@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('card', function (Blueprint $table) {
+        Schema::create('cards', function (Blueprint $table) {
             $table->id();
             $table->string('number')->unique();
             $table->string('purpose');
@@ -19,7 +19,7 @@ return new class extends Migration
             $table->boolean('expenditure');
             $table->double('amount');
             $table->foreignId('card_type_id')->constrained()->onDelete('cascade');
-            $table->foreignId('supplier_id')->constrained()->onDelete('cascade');
+            $table->foreignId('card_supplier_id')->constrained()->onDelete('cascade');
             $table->foreignId('bank_id')->constrained()->onDelete('cascade');
             $table->foreignId('wallet_id')->constrained()->onDelete('cascade');
             $table->softDeletes();
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('card');
+        Schema::dropIfExists('cards');
     }
 };
